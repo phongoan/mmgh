@@ -1,0 +1,13 @@
+name = "lazada-telegram-watch"
+main = "src/worker.js"
+compatibility_date = "2026-10-05"
+workers_dev = true
+[triggers]
+crons = ["* * * * *", "0 0 * * *"]
+[vars]
+CF_ACCOUNT_ID = "REPLACE_WITH_ACCOUNT_ID"
+[[d1_databases]]
+binding = "DB"
+database_name = "lazada-watch"
+database_id = "REPLACE_WITH_D1_ID"
+migrations_dir = "migrations"

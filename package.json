@@ -1,0 +1,1 @@
+{"name":"lazada-telegram-watch","private":true,"type":"module","scripts":{"test":"node --test","deploy":"npx wrangler deploy","db:migrate":"npx wrangler d1 migrations apply lazada-watch --remote","webhook":"node scripts/webhook.mjs"},"devDependencies":{"wrangler":"^4.0.0"}}
